@@ -46,7 +46,7 @@ body {
   animation: blinkButton 2.5s ease-in-out infinite;
 }
 
-/* 点滅アニメーション */
+/* 点滅アニメーション2 */
 @keyframes blinkButton {
   0%, 100% {
     opacity: 0.8;

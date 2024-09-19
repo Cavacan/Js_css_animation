@@ -6,15 +6,12 @@ const loadText = document.querySelector('.load-text');
 
 // ボタンがクリックされた時の処理
 button.addEventListener('click', () => {
-  // ボタンを非表示にして、ローディング画面を表示
-  button.style.display = 'none';
+  button.style.display = 'none';  // ボタンを非表示
   loadingScreen.style.visibility = 'visible'; // ローディング画面を表示
-  loadText.style.opacity = '1';
-  loadText.style.visibility = 'visible'
+  loadText.style.visibility = 'visible' // ローディング文字表示
   
   // 4秒後にローディング画面を変更
   setTimeout(() => {
-    console.log("over 4sec, loading complete.");
     
     // Now Loading... を非表示にして完了メッセージを表示
     loadText.textContent = "Loading Complete!";
@@ -22,7 +19,6 @@ button.addEventListener('click', () => {
     loadText.style.animation = 'none';
     
     // 背景色を薄緑に変更
-    loadingScreen.style.backgroundColor = '#ccffcc'; // 薄緑色に変更
-    
+    loadingScreen.style.backgroundColor = '#ccffcc'; // 薄緑色に変更    
   }, 4000); // 4秒後
 });
